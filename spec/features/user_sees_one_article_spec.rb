@@ -4,7 +4,7 @@ require 'rails_helper'
    describe 'they link from the articles index' do
      it 'displays information for one article' do
 
-     article = @article.create!(title: "New Title", body: "New Body")
+     article = Article.create!(title: "New Title", body: "New Body")
 
      visit articles_path
 
